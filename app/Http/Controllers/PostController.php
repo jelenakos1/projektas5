@@ -130,7 +130,7 @@ return view('post.index', ['posts' => $posts, 'sortCollumn' =>$sortCollumn, 'sor
      */
     public function update(Request $request)
     {
-        //
+        //comm
     }
 
     /**
@@ -147,8 +147,8 @@ return view('post.index', ['posts' => $posts, 'sortCollumn' =>$sortCollumn, 'sor
         
 
         $post_id = $request-> post_id;
-        $ posts =  Post::where(' post_id', '=' , $ post_id)->get();
-        return view(' post. postfilter', [' posts' =>$ posts]);
+        $posts =  Post::where(' post_id', '=' , $post_id)->get();
+        return view('post. postfilter', ['posts' =>$posts]);
     }
 
     public function indexpagination(Request $request) {
